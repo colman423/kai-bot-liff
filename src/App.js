@@ -1,12 +1,14 @@
 import React from 'react';
 import AppRoutes from './AppRoutes';
+import { getVersion } from './utils/common'
+
 
 function App() {
   return (
     <div>
       <AppRoutes>
       </AppRoutes>
-      v0.1.0223.1548
+      {getVersion()}
     </div>
   );
 }
