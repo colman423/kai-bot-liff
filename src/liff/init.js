@@ -6,8 +6,10 @@ export default function init() {
   }).then((result) => {
     console.log("success")
     console.log("isInClient", liff.isInClient(), "isLoggedIn", liff.isLoggedIn())
+    alert("success")
+    alert("isInClient", liff.isInClient(), "isLoggedIn", liff.isLoggedIn())
     if( !liff.isInClient() && !liff.isLoggedIn() ) {
-      // liff.login();
+      liff.login();
     }
   }).catch((err) => {
     console.log(err.code, err.message);
