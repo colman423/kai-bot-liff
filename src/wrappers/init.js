@@ -1,3 +1,2 @@
-import { initLiff } from '../liff';
-
-initLiff()
+import VConsole from 'vconsole'
+var vConsole = new VConsole();

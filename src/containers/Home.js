@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import { HashRouter, Route, Link } from "react-router-dom";
 import { getVersion } from '../utils/common'
 import { Grid, Box } from '@material-ui/core';
@@ -6,8 +6,12 @@ import HomeLink from '../components/HomeLink'
 import Icon from '../components/core/Icon';
 import PersonOutlined from '@material-ui/icons/PersonOutlined'
 import InfoOutlined from '@material-ui/icons/InfoOutlined'
+import { initLiff } from '../liff';
 
 function Home() {
+  useEffect(() => {
+    initLiff()
+  }, [])
   return (
     <Fragment>
       <Box p={1}>
