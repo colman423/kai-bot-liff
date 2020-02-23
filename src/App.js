@@ -7,6 +7,7 @@ function App() {
   console.log("App")
   return (
     <Fragment>
+      234234234
       <MuiThemeProvider theme={theme}>
         <CssBaseline />
         <AppRoutes />
