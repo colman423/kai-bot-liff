@@ -33,6 +33,7 @@ function AppRoutes() {
       <HashRouter basename='/'>
 
         <div>
+          0336
           <ul>
             <li><Link to="/mine-sweeper">MineSweeper</Link></li>
             <li><Link to="/sudoku">Sudoku</Link></li>
