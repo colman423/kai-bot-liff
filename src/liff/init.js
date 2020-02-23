@@ -1,4 +1,6 @@
 import liff from "./index";
+import VConsole from 'vconsole'
+var vConsole = new VConsole();
 
 export default function init() {
   liff.init({
@@ -7,7 +9,7 @@ export default function init() {
     console.log("success")
     console.log("isInClient", liff.isInClient(), "isLoggedIn", liff.isLoggedIn())
     alert("success")
-    alert("isInClient", liff.isInClient(), "isLoggedIn", liff.isLoggedIn())
+    alert("isInClient, "+ liff.isInClient()+ ", isLoggedIn, "+ liff.isLoggedIn())
     if( !liff.isInClient() && !liff.isLoggedIn() ) {
       liff.login();
     }
