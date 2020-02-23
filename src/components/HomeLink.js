@@ -8,17 +8,17 @@ import Icon from './core/Icon';
 const useStyles = makeStyles((theme) => createStyles({
   root: {
     width: '100%',
-    border: `2px solid #4AACDE`,
+    border: `2px solid ${theme.palette.secondary.light}`,
     borderRadius: 4,
     height: 150,
   },
   label: {
     textAlign: 'center',
-    color: '#3777A4'
+    color: theme.palette.secondary.main
   },
   icon: {
     fontSize: 50,
-    color: '#3777A4'
+    color: theme.palette.secondary.main
   }
 }));
 
