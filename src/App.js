@@ -10,7 +10,6 @@ function App() {
     <Fragment>
       {getVersion()}
       <br />
-      {window.location.href}
 
       {/* <MuiThemeProvider theme={theme}> */}
       {/* <CssBaseline /> */}

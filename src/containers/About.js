@@ -11,7 +11,10 @@ function About() {
   }, [])
   return (
     <Fragment>
-      about
+      <br />
+      2. {window.location.href}
+      <br />
+      THIS IS about
     </Fragment>
   );
 }
