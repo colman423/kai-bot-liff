@@ -1,21 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import * as codingbarIconList from '../../design/icons'
+import * as IconList from '../../icons'
 import { Icon as MuiIcon, makeStyles } from '@material-ui/core'
 
 const ICON_SET = {
-  CODING_BAR: 'codingbar',
+  KAI: 'kai',
   MATERIAL: 'material'
 }
+
 const useStyles = makeStyles(theme => ({
-  codingbarIcon: {
+  root: {
     verticalAlign: 'middle'
   }
 }))
-const CodingbarIcon = ({ name, ...props }) => {
+const CustomIcon = ({ name, ...props }) => {
   const classes = useStyles();
   return (
-    <img src={codingbarIconList[name]} className={classes.codingbarIcon} {...props} />
+    <img src={IconList[name]} className={classes.root} {...props} />
   )
 }
 
@@ -24,17 +25,15 @@ const Icon = ({ set, ...props }) => {
     const { name, ...mdProps } = { ...props }
     return <MuiIcon {...mdProps}>{name}</MuiIcon>
   } else {
-    return <CodingbarIcon {...props} />
+    return <CustomIcon {...props} />
   }
 }
-
 Icon.propTypes = {
   set: PropTypes.oneOf(Object.values(ICON_SET)).isRequired,
   name: PropTypes.string.isRequired
 }
-
 Icon.defaultProps = {
-  set: ICON_SET.CODING_BAR
+  set: ICON_SET.KAI
 }
 
 export default Icon

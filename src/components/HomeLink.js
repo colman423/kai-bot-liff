@@ -1,21 +1,40 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
-import { makeStyles, createStyles } from '@material-ui/core';
+import { makeStyles, createStyles, Typography, Grid, Box } from '@material-ui/core';
 import Button from './core/Button'
+import Icon from './core/Icon';
 
 const useStyles = makeStyles((theme) => createStyles({
   root: {
-    // backgroundColor: theme.color.red,
+    width: '100%',
+    border: `2px solid ${theme.palette.secondary.light}`,
+    borderRadius: 4,
+    height: 150,
   },
+  label: {
+    textAlign: 'center',
+    color: theme.palette.secondary.main
+  },
+  icon: {
+    fontSize: 50,
+    color: theme.palette.secondary.main
+  }
 }));
 
 const HomeLink = ({ to, title, icon, ...props }) => {
   const classes = useStyles()
+  const Icon = icon
   return (
-    <Button to={to} className={classes.root}>
-      {title}
-      {icon || "noIcon"}
+    <Button to={to} className={classes.root} classes={{ label: classes.label }}>
+      <Grid container justify="center" spacing={1}>
+        <Grid item xs={12}>
+          <Icon className={classes.icon} />
+        </Grid>
+        <Grid item xs={12}>
+          {title}
+        </Grid>
+      </Grid>
     </Button>
   )
 

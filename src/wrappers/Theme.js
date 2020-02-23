@@ -25,8 +25,8 @@ const theme = createMuiThemeSequence(
         main: '#fed602'
       },
       secondary: {
-        main: '#2c41c2',
-        light: '#dbdbdb'
+        main: '#3777A4',   // icon color
+        light: '#4AACDE',  // border
       },
       error: {
         main: '#fc4f52'
@@ -51,10 +51,11 @@ const theme = createMuiThemeSequence(
   prevTheme => ({
     typography: {
       fontFamily: [
+        "Microsoft JhengHei",
         '"Noto Sans TC"',
-        'PingFangTC',
-        '"Microsoft JhengHei"',
-        '"微軟正黑體"',
+        "Roboto", 
+        "Helvetica", 
+        "Arial", 
         'sans-serif',
       ].join(','),
       useNextVariants: true,
