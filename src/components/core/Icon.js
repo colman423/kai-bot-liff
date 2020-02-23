@@ -13,10 +13,10 @@ const useStyles = makeStyles(theme => ({
     verticalAlign: 'middle'
   }
 }))
-const CustomIcon = ({ name, ...props }) => {
+const CustomIcon = ({ name, alt, ...props }) => {
   const classes = useStyles();
   return (
-    <img src={IconList[name]} className={classes.root} {...props} />
+    <img src={IconList[name]} className={classes.root} alt={alt || ""} {...props} />
   )
 }
 

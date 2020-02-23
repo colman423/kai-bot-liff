@@ -59,6 +59,8 @@ const theme = createMuiThemeSequence(
         'sans-serif',
       ].join(','),
       useNextVariants: true,
+      h2: { fontWeight: 'medium' },
+      h3: { fontWeight: 'medium' },
       h6: { fontSize: '24px', color: prevTheme.palette.primary.main, },
       subtitle1: {
         fontSize: '20px', color: prevTheme.palette.primary.main, fontWeight: prevTheme.typography.fontWeightMedium

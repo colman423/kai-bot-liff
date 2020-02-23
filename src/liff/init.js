@@ -1,5 +1,16 @@
 import liff from "./index";
 
 export default function init() {
-  console.log("init liff", liff)
+  liff.init({
+    liffId: process.env.REACT_APP_LIFF_ID
+  }).then((result) => {
+    console.log("success")
+    console.log("isInClient", liff.isInClient(), "isLoggedIn", liff.isLoggedIn())
+    if( !liff.isInClient() && !liff.isLoggedIn() ) {
+      // liff.login();
+    }
+  }).catch((err) => {
+    console.log(err.code, err.message);
+    alert(err.code, err.message);
+  });
 }

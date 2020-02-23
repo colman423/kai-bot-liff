@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { HashRouter, Route } from "react-router-dom";
-import LoaderCentered from '../components/core/LoaderCentered';
+import Loading from '../components/core/Loading';
 
 // Helper function to retry lazy import when failed
 // Will try 5 times with 1 sec delay between each attempt
@@ -31,7 +31,7 @@ const About = lazy(() => retry(() => import('../containers/About')))
 function AppRoutes() {
   return (
     <HashRouter basename='/'>
-      <Suspense fallback={<LoaderCentered />}>
+      <Suspense fallback={<Loading />}>
         <Route exact path="/" component={Home} />
         <Route exact path="/user-profile" component={UserProfile} />
         <Route exact path="/about" component={About} />
