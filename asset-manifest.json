@@ -1,0 +1,32 @@
+{
+  "files": {
+    "static/js/0.dd6ee031.chunk.js": "/kai-bot-liff/static/js/0.dd6ee031.chunk.js",
+    "static/js/0.dd6ee031.chunk.js.map": "/kai-bot-liff/static/js/0.dd6ee031.chunk.js.map",
+    "main.js": "/kai-bot-liff/static/js/main.5ebffb4d.chunk.js",
+    "main.js.map": "/kai-bot-liff/static/js/main.5ebffb4d.chunk.js.map",
+    "runtime-main.js": "/kai-bot-liff/static/js/runtime-main.8253c697.js",
+    "runtime-main.js.map": "/kai-bot-liff/static/js/runtime-main.8253c697.js.map",
+    "static/js/3.cb20f440.chunk.js": "/kai-bot-liff/static/js/3.cb20f440.chunk.js",
+    "static/js/3.cb20f440.chunk.js.map": "/kai-bot-liff/static/js/3.cb20f440.chunk.js.map",
+    "static/js/4.ec40323e.chunk.js": "/kai-bot-liff/static/js/4.ec40323e.chunk.js",
+    "static/js/4.ec40323e.chunk.js.map": "/kai-bot-liff/static/js/4.ec40323e.chunk.js.map",
+    "static/js/5.4860e267.chunk.js": "/kai-bot-liff/static/js/5.4860e267.chunk.js",
+    "static/js/5.4860e267.chunk.js.map": "/kai-bot-liff/static/js/5.4860e267.chunk.js.map",
+    "static/js/6.e03fef8f.chunk.js": "/kai-bot-liff/static/js/6.e03fef8f.chunk.js",
+    "static/js/6.e03fef8f.chunk.js.map": "/kai-bot-liff/static/js/6.e03fef8f.chunk.js.map",
+    "static/js/7.e9f40304.chunk.js": "/kai-bot-liff/static/js/7.e9f40304.chunk.js",
+    "static/js/7.e9f40304.chunk.js.map": "/kai-bot-liff/static/js/7.e9f40304.chunk.js.map",
+    "index.html": "/kai-bot-liff/index.html",
+    "precache-manifest.d712b39590990298ce51f743e87fa795.js": "/kai-bot-liff/precache-manifest.d712b39590990298ce51f743e87fa795.js",
+    "service-worker.js": "/kai-bot-liff/service-worker.js",
+    "static/js/3.cb20f440.chunk.js.LICENSE.txt": "/kai-bot-liff/static/js/3.cb20f440.chunk.js.LICENSE.txt",
+    "static/js/4.ec40323e.chunk.js.LICENSE.txt": "/kai-bot-liff/static/js/4.ec40323e.chunk.js.LICENSE.txt",
+    "static/media/mineSweeper.svg": "/kai-bot-liff/static/media/mineSweeper.984e9636.svg",
+    "static/media/user.svg": "/kai-bot-liff/static/media/user.afcc9b05.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8253c697.js",
+    "static/js/4.ec40323e.chunk.js",
+    "static/js/main.5ebffb4d.chunk.js"
+  ]
+}
