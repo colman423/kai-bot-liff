@@ -8,10 +8,10 @@ function App() {
   return (
     <Fragment>
       234234234
-      <MuiThemeProvider theme={theme}>
+      {/* <MuiThemeProvider theme={theme}> */}
         <CssBaseline />
         <AppRoutes />
-      </MuiThemeProvider>
+      {/* </MuiThemeProvider> */}
     </Fragment>
   );
 }
