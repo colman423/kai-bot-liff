@@ -2,6 +2,7 @@
   "name": "kai-bot-liff",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://colman423.github.io/kai-bot-liff",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
